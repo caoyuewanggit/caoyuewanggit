@@ -1,7 +1,10 @@
 import time
 from selenium import webdriver
+import re
 browser=webdriver.Chrome()
 browser.get("http://www.baidu.com")
+page =browser.page_source
+print(page)
 time.sleep(5)
 browser.quit()
 print("hello worl1d")
